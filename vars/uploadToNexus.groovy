@@ -5,7 +5,7 @@ def call(nexusRepo){
   def groupId= pom.groupId
   nexusArtifactUploader artifacts: [[artifactId: 'artifactId', classifier: '', file: "target/${artifactId}-${pom.version}.war", type: 'war']], 
   credentialsId: 'Nexus3', 
-  groupId: 'groupId', 
+  groupId: 'in.javahome', 
   nexusUrl: '172.31.9.153:8081', 
   nexusVersion: 'nexus3', 
   protocol: 'http', 
